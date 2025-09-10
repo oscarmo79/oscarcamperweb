@@ -1,0 +1,383 @@
+          /* estilos grnerales */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+            /* estilos body */
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: monospace;
+}
+        /* estilos de menu hamburguesa */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 217, 97, 0.82);
+    color: grey;
+    padding: 10px 20px;
+    height: auto;
+    box-shadow: 0 1px 10px #000000;
+}
+.active{
+    background-color: rgb(221, 222, 135);
+}
+.logo {
+    height: 74px;
+    width: auto;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: monospace;
+}
+.nav-links li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.nav-links li a:hover {
+    color: #000;
+}
+.check-menu {
+    display: none;
+}
+.label-check {
+    display: none;
+}
+@media (max-width: 768px) {
+    .label-check{ 
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color:  rgba(223, 217, 97, 0.82);;
+        gap: 0;
+    }
+    .nav-links li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+    .nav-links li a:hover {
+        background-color:orange
+    }
+    .check-menu:checked + .nav-links {
+        display: flex;
+    }
+    }
+      /*********************** estilos main  index***********************/
+              
+    .subh1{
+        color: white;
+        font-style: italic;
+    }
+    .hero{
+    font-family:fantasy;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: url(../assets/images/fondohero.jpg) top/cover no-repeat;
+    } 
+    .hero h1 {
+        margin-bottom:20px ;
+        font-size: 60px;
+        color: rgba(4, 4, 4, 0.797);
+   }
+    .contenido{
+        margin: 50px auto;
+        max-width: 800px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 20px;
+        color: rgb(00,00,00);
+        background-color: rgba(236, 211, 177, 0.806);
+        border: #000 solid;
+        border-radius: 20px;}
+        
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .recomendaciones{
+        padding: 10px;
+        line-height: 80px; 
+        font-family: monospace;
+        opacity: 0.8;
+        color:rgb(130, 155, 89) ;
+    }
+    .recomendaciones :hover{
+         transform: translateY(-10px);   
+    }
+    .recomendaciones a {
+        text-decoration: none;
+        font-size: 30px;
+        font-family: monospace;
+        transition: all .03s ease-in-out;
+     }
+    .contenidoreco{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .contenidoreco h2{
+        font-size: 50px;
+        font-family: monospace;
+        color: white;
+    }
+    .textomain{
+        font-size: 30px;
+        font-family: monospace;
+        color: rgb(130, 155, 89)
+    }
+   
+    /**************** estilos productos *****************/
+    .galeria{
+        margin: auto;
+        font-size: 20px;
+        color: rgb(00,00,00);
+        background-color: rgba(236, 211, 177, 0.806);
+        border: #000 solid ;
+        border-radius: 20px;
+    }
+    .contenedor-fotos{
+        max-width : 1020px;
+        margin:  auto ;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 100px 0;
+    }
+    .caja img{
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        padding: 30px; 
+    }
+    .texto-galeria{
+        color:rgb(40, 39, 38);
+        font-family: monospace;
+        font-size: large;
+    }
+    /************** estilos presupuestos ************/
+    table{
+        margin: 50px;
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+        max-width: 800px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 20px;
+        color: rgb(00,00,00);
+        background-color: rgba(236, 211, 177, 0.806);
+        border: #000 solid;
+        border-radius: 20px;       
+        font-size: 50px;
+    }
+    table caption, table th{
+        font-family: monospace;
+        font-size: large;
+        padding:20px ;
+        letter-spacing: 2px;
+    }
+    table caption{
+        color: rgb(197, 131, 45);
+        font-size: larger;
+    } 
+    .alta{
+        color: rgb(126, 22, 22);
+        background-color: rgba(121, 79, 79, 0.763);
+    }
+    .baja{
+        color: rgb(154, 221, 88);
+        background-color: rgba(11, 184, 54, 0.328);
+    }
+    .media{
+        color: goldenrod;
+        background-color: rgba(189, 183, 107, 0.45);
+    }
+    .descuento{ 
+         font-family: monospace;
+         font-size: 15px;
+         padding:20px ;
+         letter-spacing: 2px;
+    }
+     .mensajetarifas{
+        font-family: monospace;
+        font-size: 150%;
+        padding:80px ;
+        letter-spacing: 2px;
+        background-color: rgba(236, 211, 177, 0.806);
+        border: #000 solid;
+        border-radius: 20px;
+        margin: 50px;
+        width: 600px;
+        height: 400px;
+        margin: 50px auto;
+        max-width: 600px;
+        text-align: center;}
+        main{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .formulario{
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto ;
+            padding: 5% 0;
+            border: 1px solid black;
+            background-color: rgba(236, 211, 177, 0.806);
+            border-radius: 20px;
+        }
+        .formulario *{
+            box-sizing: border-box;  
+        }
+        .lista-formulario, .lista-politica{
+            list-style-type: none;
+            padding: 0;
+        }
+        .lista-politica{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lista-politica li, .lista-formulario{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;  
+        }
+        .lista-formulario{
+            padding: 0 40px;
+            justify-content: space-between;
+            font-family: monospace;
+        }
+        .lista-formulario > li:not(:last-child){
+            margin-bottom: 20px;
+        }
+        /************ estilos contactos***************/
+        .mapa{
+
+            border: 1px #000 solid;
+            justify-content: space-between;
+            margin:  0 auto;
+            max-width: 1200px;
+            background-color:rgba(236, 211, 177, 0.806); 
+            border-radius: 20px;   
+        }
+        .mapa:hover{
+             transform: translateY(-10px);
+        }
+        .direccion{
+            border: 1px #000 solid;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color:rgba(236, 211, 177, 0.806);
+            font-family: monospace; 
+            font-size: 20px;
+            width: 300px;
+            height: 180px;
+            line-height: 30px;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .mensajerecogida{
+            border: 1px #000 solid;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color:rgba(236, 211, 177, 0.806);
+            font-family: monospace; 
+            font-size: 22px;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-bottom: 20px;   
+        }
+                     /* estilos footer general */ 
+    footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(223, 217, 97, 0.82);
+    color: grey;
+    padding: 10px 20px;
+    height: auto;
+    box-shadow: 0 1px 10px #000000;
+    }
+    .enlacepie :hover{
+        transform: translateY(-10px);
+    } 
+    .noticia{
+        color:rgba(30, 29, 29, 0.967);
+        border: #000 solid;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 20px ;
+        line-height: 30px;
+        background-color: rgba(250, 235, 215, 0.427);
+        font-family: monospace;
+        font-size: 18px;
+    }
+    .titulonoticia{
+        color: #000;
+        font-size: 40px;
+        padding: 40px;
+    }
+        
+
+        
+    
+
+
+
+    
+
+
+
+
+
+
+   
+
+        
+        
+    
+
+    
+
+        
+
+        
+    
+       
+
+
+
+
+
+          
+        
+    
+
+    
+    
+    
+
+        
+    
+        
+
+    

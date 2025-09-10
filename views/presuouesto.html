@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+                        <!-- configuracion pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oscarscamper</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="imagen/png" href="../assets/images/favicomfurgo.png">
+</head>
+<body class="hero">
+    <header>
+                        <!-- menu hamburguesa -->
+        <nav class="navbar">
+            <div>
+                <img src="../assets/images/logofurgoneta.png" alt="logodeoscarcamper" class="logo">
+            </div>
+            <input type="checkbox" id="check-menu"
+            class="check-menu">
+            <Ul class="nav-links">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="../views/productos.html">productos</a></li>
+                <li><a class="active" href="#Presupuestos">presupuestos</a></li>
+                <li><a href="../views/contacto.html">contactos</a></li>
+            </Ul>
+            <label for="check-menu" class="label-check">
+                <img src ="../assets/images/menu-1-svgrepo-com(1).svg" alt="logomenuhamburguesa" class="menu-haburguesa" width="40" height="40">
+            </label>            
+        </nav>
+                      
+    </header>
+                     <!-- estructura main presupuesto tarifas -->
+    <main>
+          <section class="contenido1"> 
+            <h1>Oscarcamper</h1>
+          </section>
+          <div class="tarifas">
+             <div>
+                 <table>
+                    <caption>Tarifas segun temporada</caption>
+                    <thead>
+                        <tr>
+                            <th>Temporada Alta</th>
+                            <th>Temporada Media</th>
+                            <th>Temporada Baja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="alta">100Euros/Dia</td>
+                            <td class="media">85Euros/Dia</td>
+                            <td class="baja">70Euros/Dia</td>
+                         </tr> 
+                         <tr>
+                            <td class="descuento">Todas las tarifas tendrán un 15% de descuento contratando 5 días o más</td>
+                            <td class="descuento">Todas las tarifas tendrán un 15% de descuento contratando 5 días o más</td>
+                            <td class="descuento">Todas las tarifas tendrán un 15% de descuento contratando 5 días o más</td>
+                         </tr>  
+                    </tbody>
+                 </table>
+            </div> 
+                    <!--mensaje para hacer reserva  -->
+            <div class="mensajetarifas">
+                <p>con la intención de atenderles de la manera más eficiente ,individualizada y completa, a continuación le falicitaremos un formulario en el que nos podrán solicitar presupuesto. y una vez recibidos sus datos, con los días solicitados, nos pondremos en contacto con usted para ultimar los detalles del alquiler.</p>
+            </div>
+        </div>
+                      <!-- formulario reserva -->
+            <div class="formulario">
+                <form id="mifor" name="mifor" action="mailto:oscarmo1979.omo@gmail.com" method="post" target="peticion dudas y precio alquiler">
+                    <ul class="lista-formulario">
+                        <li>
+                            <label for="first-name">Nombre</label>
+                            <input type="text" id="first-name" name="first-name"
+                                 placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                                 title="Escriba letras solo entre 3 y 15 caracteres" required>
+
+                        </li><li>
+                            <label for="surname">Apellidos</label>
+                            <input type="text" id="surname" name="surname"
+                                 placeholder="Escriba sus Apellidos" pattern="[A-Z a-z]{4,40}"
+                                 title="Escriba letras solo entre 4 y 40 caracteres" required>
+                        </li>
+                        <li>
+                            <label for="email">correo electronico</label>
+                            <input type="email" id="email" name="email"
+                                 placeholder="Escriba su correo electronico" pattern="[A-Za-z0-9_-.]+@^[a-z0-9-_.]+\.[a-z]{2,4}"
+                                 title="Escriba su Email" required>
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono"
+                            placeholder="Escriba su telefono"  pattern="[o-9]{9}"
+                            title="Escriba los 9 numeros de su teléfono movil" required>
+                        </li>
+                        <li>
+                            <label for="message">Mensaje</label>
+                            <textarea rows="9" id="message" placeholder="Escriba aquí su mensaje"></textarea>
+                        </li>
+                        <li>
+                            <p>Politica de privacidad de la empresa</p>
+                            <ul class="lista-politica">
+                                <li>
+                                    <label for="Acepto">Acepto</label>
+                                    <input type="radio" id="Acepto" name="aceptar-option" value="Acepto" required
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="botonlista">
+                            <button type="reset">Borrar</button>
+                            <button type="submit"> Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+    </main>
+                  <!-- estructura pie de pagina presupuestos  -->
+    <footer class="pie">
+        <div >
+            <p>Todos los derechos reservados</p> 
+        </div> <p>ctra Sevilla a,S/N 41920 San Juan de Aznalfarache , Sevilla.</p>
+        <div class="enlacepie">  
+            <a href="//es-la.facebook.com/"> <img src="../assets/images/logoface.svg" alt="logo face" width="40" height="40"> </a>
+            <a href="https://www.instagram.com/"> <img src="../assets/images/logoinsta.svg" alt="logo de instagran" width="40" height="40"></a>
+        </div>
+    </footer>
+</body>
+</html>
